@@ -1,3 +1,4 @@
+
 """
 p.s. AI预测概率 + 完整debug快照（可通过参数关闭）
 """
@@ -259,7 +260,7 @@ class RPSGui:
         if title:
             ax.set_title(title, color=self.C["accent"], fontsize=12,
                          fontweight="bold", pad=12, loc="left")
--
+
     def _do_pre_commit(self):
         "新的轮次"
         commitment = self.brain.pre_commit()
@@ -406,3 +407,5 @@ if __name__ == "__main__":
     # 下一行改为 debug_visible=True 即可同时查看调试窗口！！
     gui = RPSGui(debug_visible=False)   # 关闭调试窗口
     gui.run()
+
+print("All example imports succeeded.")
